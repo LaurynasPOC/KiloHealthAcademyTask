@@ -1,0 +1,12 @@
+@import "../styles/index.scss";
+
+.yoga-plan-headline {
+  margin: 15px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  & span {
+    color: orange;
+  }
+}

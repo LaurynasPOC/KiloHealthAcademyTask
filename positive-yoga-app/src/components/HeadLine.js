@@ -1,9 +1,11 @@
 import "./HeadLine.scss";
 
-const Headline = ({ text }) => {
+const Headline = ({ text, textS }) => {
   return (
     <div className="head-line">
-      <h1>{text}</h1>
+      {text && <h1>{text}</h1>}
+
+      {!text && <h3>{textS}</h3>}
     </div>
   );
 };
