@@ -1,0 +1,37 @@
+@import "../styles/index.scss";
+
+.header-top {
+  display: flex;
+  gap: 18px;
+  height: 56px;
+  min-width: 375px;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 300;
+  background-color: $lightblue;
+  color: $white;
+  align-items: center;
+  letter-spacing: 1px;
+  justify-content: center;
+}
+
+.header-top__p span {
+  font-weight: 600;
+}
+
+.header-mid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 56px;
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.08);
+}
+
+.header-bottom {
+  margin-bottom: 0;
+  margin-left: 15px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $grey;
+}
