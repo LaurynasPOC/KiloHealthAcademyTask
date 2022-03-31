@@ -14,11 +14,13 @@
     border: 1.02449px solid rgba(33, 33, 33, 0.16);
     box-shadow: 0 4px 8px 0 #ebebeb;
   }
-  & img:nth-child(2) {
+  & div {
     position: absolute;
     z-index: -1;
     width: 375px;
     height: 433px;
+    background-color: #ebebeb;
+    transform: matrix(-1, 0.55, 0, 0.55, 0, 0);
   }
   & img:last-of-type {
     margin-top: 75px;

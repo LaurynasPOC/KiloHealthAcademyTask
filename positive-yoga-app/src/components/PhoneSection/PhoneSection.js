@@ -6,7 +6,8 @@ const PhoneSection = () => {
   return (
     <div className="mobile-container">
       <img src={Phone2} alt="yoga everythere" />
-      <img src={Background} alt="I love Yoga" />
+      <div></div>
+      {/* <img src={Background} alt="I love Yoga" /> */}
       <img src={Phone1} alt="i need yoga" />
     </div>
   );

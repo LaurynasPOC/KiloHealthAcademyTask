@@ -1,6 +1,5 @@
 import Header from "../components/Header/Header";
 import Headline from "../components/HeadLine/HeadLine";
-import MonthPlan from "../components/MonthPlan/MonthPlan";
 import MonthPlanHeadline from "../components/MonthPlan/MonthPlanHeadline";
 import Button from "../components/Button/Button";
 import PaymentSection from "../components/PaymentSection/PaymentSection";
@@ -8,32 +7,12 @@ import AdvertismentSection from "../components/AdvertismentSection/AdvertismentS
 import YogaForMeSection from "../components/IsYogaForU/YogaForMeSection";
 import PhoneSection from "../components/PhoneSection/PhoneSection";
 import QuestionsSection from "../components/QuestionsSection/QuestionsSection";
+import CardContainer from "../components/Cards/CardContainer";
+import MonthPlanSection from "../components/MonthPlan/MonthPlanSection";
+import CardContainerDekstop from "../components/Cards/CardContainerDekstop";
 import "./FrontPage.scss";
 
 const FrontPage = () => {
-  const monthPlanData = [
-    {
-      month: 6,
-      discount: 50,
-      price: 9.99,
-      fullprice: 119.94,
-      afterdiscount: 59.94,
-    },
-    {
-      month: 3,
-      discount: null,
-      price: 14.99,
-      fullprice: 59.97,
-      afterdiscount: 44.97,
-    },
-    {
-      month: 1,
-      discount: null,
-      price: 19.99,
-      fullprice: 1,
-      afterdiscount: 1,
-    },
-  ];
   return (
     <div>
       <div>
@@ -41,28 +20,30 @@ const FrontPage = () => {
       </div>
       <div className="body-container">
         <Headline text={"Get access to your yoga program now!"} />
-        <MonthPlanHeadline />
-        {monthPlanData.map((plan, i) => {
-          {
-            console.log(plan.afterdiscount);
-          }
-          return (
-            <MonthPlan
-              key={i}
-              month={plan.month}
-              price={plan.price}
-              priceWithoutDiscount={plan.fullprice}
-              priceWithDiscount={plan.afterdiscount}
-              discount={plan.discount}
-            />
-          );
-        })}
+        <div className="top-section">
+          <div></div>
+          <div className="dekstop-month-plan">
+            <MonthPlanHeadline />
+            <MonthPlanSection />
+            <Button text={"Get your plan"} />
+            <PaymentSection />
+          </div>
+          <div>
+            <Headline textS={"What is my program?"} />
+            <AdvertismentSection />
+          </div>
+          <div></div>
+        </div>
 
-        <Button text={"Get your plan"} />
-        <PaymentSection />
-        <Headline textS={"What is my program?"} />
-        <AdvertismentSection />
         <Headline textS={"Hear success stories from our clients"} />
+        <div className="mobile-version">
+          <CardContainer />
+        </div>
+        <div className="dekstop-version">
+          <div></div>
+          <CardContainerDekstop />
+          <div></div>
+        </div>
         <Button text={"Get my plan"} />
         <Headline textS={"Is Positive Yoga right for me?"} />
         <YogaForMeSection />
@@ -71,7 +52,19 @@ const FrontPage = () => {
         <Headline textS={"Frequently Asked Questions"} />
         <QuestionsSection />
         <Button text={"Get your plan"} />
-        <Headline textS={"Start your yoga program today!"} />
+        <Headline textM={"Start your yoga program today!"} />
+        <div className="top-section">
+          <div>
+            <MonthPlanHeadline />
+            <MonthPlanSection />
+            <Button text="Get your plan" />
+            <PaymentSection />
+          </div>
+          <div>
+            <Headline textS={"What's my program?"} />
+            <AdvertismentSection />
+          </div>
+        </div>
       </div>
     </div>
   );
