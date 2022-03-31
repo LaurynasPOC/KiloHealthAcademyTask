@@ -1,8 +1,8 @@
-@import "../styles/index.scss";
+@import "../../styles/index.scss";
 
-.container {
+.advertisment-container {
   display: flex;
-  margin: 15px 15px;
+  margin: 15px 0;
   & div {
     margin: 0 18px;
     color: $grey;

@@ -2,7 +2,7 @@ import "./AdvertismentPart.scss";
 
 const AdvertismenPart = ({ svg, imgText, headline, text }) => {
   return (
-    <div className="container">
+    <div className="advertisment-container">
       <img src={svg} alt={imgText} />
       <div>
         <h5>{headline}</h5>

@@ -1,4 +1,4 @@
-import Payment from "../assets/Payment.svg";
+import Payment from "../../assets/Payment.svg";
 import "./PaymentSection.scss";
 
 const PaymentSection = () => {

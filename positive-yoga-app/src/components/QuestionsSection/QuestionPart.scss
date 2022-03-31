@@ -1,0 +1,30 @@
+@import "../../styles/index.scss";
+
+.question-part-container {
+  background: $white;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+  border-radius: 16px;
+  width: 343px;
+
+  margin-bottom: 16px;
+  & div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+    & h5 {
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 20px;
+      letter-spacing: -0.4px;
+      color: $grey;
+    }
+  }
+  & p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 15px;
+  }
+}

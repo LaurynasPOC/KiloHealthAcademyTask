@@ -1,0 +1,12 @@
+@import "../../styles/index.scss";
+
+.yoga-for-you-container {
+  display: flex;
+  & p {
+    margin: 8px;
+    margin-left: 16px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}

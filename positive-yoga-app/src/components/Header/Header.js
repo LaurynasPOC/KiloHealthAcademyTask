@@ -1,5 +1,5 @@
-import DisCountSticker from "../assets/DiscountSticker.svg";
-import YogaLogo from "../assets/PositiveYogaLogo.svg";
+import DisCountSticker from "../../assets/DiscountSticker.svg";
+import YogaLogo from "../../assets/PositiveYogaLogo.svg";
 import "./Header.scss";
 const Header = () => {
   return (

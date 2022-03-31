@@ -1,12 +1,11 @@
 import AdvertismenPart from "./AdverstismentPart";
-import CheckList from "../assets/CheckList.svg";
-import GuideBook from "../assets/GuideBook.svg";
-import Watch from "../assets/Watch.svg";
-import Whistle from "../assets/Whistle.svg";
-import Sneakers from "../assets/Sneakers.svg";
-import Streching from "../assets/StrechingExercise.svg";
-import HealthyFood from "../assets/HealthyFood.svg";
-import "./AdvertismentSection.scss";
+import CheckList from "../../assets/CheckList.svg";
+import GuideBook from "../../assets/GuideBook.svg";
+import Watch from "../../assets/Watch.svg";
+import Whistle from "../../assets/Whistle.svg";
+import Sneakers from "../../assets/Sneakers.svg";
+import Streching from "../../assets/StrechingExercise.svg";
+import HealthyFood from "../../assets/HealthyFood.svg";
 
 const AdvertismentSection = () => {
   return (
