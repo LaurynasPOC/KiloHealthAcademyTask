@@ -7,11 +7,9 @@ import { cardInfo } from "../../data";
 import "./CardContainer.scss";
 
 const CardContainer = () => {
-  const settings = [
-    { width: 1, itemToShow: 1 },
-    { width: 550, itemToShow: 2 },
-    { width: 768, itemToShow: 3 },
-  ];
+  //Review card mobile version logic with react elastic carousel
+
+  const settings = [{ width: 1, itemToShow: 1 }];
 
   return (
     <div className="card-info-container">

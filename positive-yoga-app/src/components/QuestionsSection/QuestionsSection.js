@@ -3,6 +3,7 @@ import QuestionPart from "./QuestionPart";
 import { questionsData } from "../../data";
 
 const QuestionsSection = () => {
+  //questions section logic
   return (
     <div className="questions-main-container">
       {questionsData.map((ques, i) => {

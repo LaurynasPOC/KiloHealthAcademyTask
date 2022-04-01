@@ -2,8 +2,7 @@ import AdvertismenPart from "./AdverstismentPart";
 import { advertismentData } from "../../data";
 
 const AdvertismentSection = () => {
-  const bbb = advertismentData;
-  console.log(bbb);
+  //Whats is in my program section logic
   return (
     <div className="main-container">
       {advertismentData.map((adv, i) => {

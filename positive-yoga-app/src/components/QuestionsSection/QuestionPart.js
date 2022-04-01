@@ -4,6 +4,7 @@ import Up from "../../assets/ExpandLess.svg";
 import Down from "../../assets/ExpandMore.svg";
 
 const QuestionPart = ({ headline, text }) => {
+  //questions part logic
   const [selected, setSelected] = useState(false);
   return (
     <div

@@ -1,10 +1,11 @@
 import React from "react";
-
 import Countdown from "react-countdown";
 import DisCountSticker from "../../assets/DiscountSticker.svg";
 import YogaLogo from "../../assets/PositiveYogaLogo.svg";
 import "./Header.scss";
+
 const Header = () => {
+  //header logic with react countdown
   return (
     <div className="header">
       <div className="header-top">

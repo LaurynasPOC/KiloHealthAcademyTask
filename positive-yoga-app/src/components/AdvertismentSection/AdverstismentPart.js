@@ -1,6 +1,7 @@
 import "./AdvertismentPart.scss";
 
 const AdvertismenPart = ({ svg, imgText, headline, text }) => {
+  //What is in my program one part logic
   return (
     <div className="advertisment-container">
       <img src={svg} alt={imgText} />

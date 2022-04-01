@@ -2,6 +2,7 @@ import Star from "../../assets/Star.svg";
 import "./Card.scss";
 
 const Card = ({ name, adress, picture, review }) => {
+  //review card logic
   return (
     <div className="card-container">
       <div className="card-header">

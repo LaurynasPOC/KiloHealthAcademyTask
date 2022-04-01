@@ -1,6 +1,7 @@
 import MonthPlan from "./MonthPlan";
 import { monthPlanData } from "../../data";
 const MonthPlanSection = () => {
+  //month plan logic
   return (
     <div>
       {monthPlanData.map((plan, i) => {

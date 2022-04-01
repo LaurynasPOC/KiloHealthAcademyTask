@@ -1,6 +1,7 @@
 import "./HeadLine.scss";
 
 const Headline = ({ text, textS, textM }) => {
+  //dont know is it good practise
   return (
     <div className="head-line">
       {text && <h1>{text}</h1>}

@@ -12,10 +12,16 @@ const MonthPlan = ({
 }) => {
   const [selected, setSelected] = useState(false);
 
+  //the logic of the selected plan needs to be improved to deselect other selection then clicked
+
+  const selectHandle = () => {
+    return setSelected(!selected);
+  };
+
   return (
     <div>
       <div
-        onClick={() => setSelected(!selected)}
+        onClick={selectHandle}
         className={"plan-container"}
         style={
           selected
