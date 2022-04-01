@@ -1,10 +1,21 @@
 .body-container {
   margin: 15px;
-  margin-bottom: 60px;
   max-width: 480px;
 }
 .dekstop-version {
+  display: none;
+}
+
+.head-dekstop {
+  display: none;
+}
+.head-mobile {
   display: block;
+  min-width: 343px;
+  max-width: 480px;
+}
+.plans-ordered {
+  margin-top: 20px;
 }
 @media (min-width: 520px) {
   .body-container {
@@ -12,35 +23,80 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .top-section {
     display: flex;
-    margin-left: -125px;
+    justify-content: center;
   }
   .main-container {
     margin-left: 15px;
   }
-  .head-line h3 {
-    margin-top: 17px;
-    margin-bottom: 36px;
-    margin-left: 18px;
+  .head-line {
+    & h1 {
+      font-size: 40px;
+      text-align: center;
+      padding-right: 54px;
+    }
+    & h2 {
+      font-size: 32px;
+    }
+    & h3 {
+      margin-top: 17px;
+      margin-bottom: 36px;
+      margin-left: 18px;
+      font-size: 24px;
+    }
   }
+
   .mobile-version {
     display: none;
   }
+  .dekstop-version {
+    display: block;
+  }
   .card-info-container {
     display: flex;
-    margin-left: -332px;
+    justify-content: center;
   }
-  .head-line h1 {
-    margin-left: -120px;
-    font-size: 40px;
-    width: 730px;
-  }
+
   .dekstop-month-plan {
     width: 352px;
   }
   .advertisment-container {
-    width: 339px;
+    width: 343px;
+  }
+  .dekstop-mid-mobile {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-top: 25px;
+  }
+  .mobile-container {
+    margin-right: 20px;
+    & img:first-of-type {
+      margin-top: 0;
+    }
+    & img:last-of-type {
+      margin-top: 30px;
+    }
+  }
+  h2 {
+    text-align: center;
+  }
+  .desktop-questions-h3 {
+    text-align: center;
+  }
+  .yoga-plan-headline {
+    padding-right: 25px;
+  }
+  .plans-ordered {
+    text-align: center;
+    margin: 15px;
+  }
+  .head-mobile {
+    display: none;
+  }
+  .head-dekstop {
+    display: block;
   }
 }

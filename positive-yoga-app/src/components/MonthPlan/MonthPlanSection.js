@@ -1,19 +1,21 @@
 import MonthPlan from "./MonthPlan";
 const MonthPlanSection = () => {
+  const monthPlanPrice = 19.99;
+
   const monthPlanData = [
     {
       month: 6,
-      discount: 50,
       price: 9.99,
       fullprice: 119.94,
       afterdiscount: 59.94,
+      discount: 50,
     },
     {
       month: 3,
-      discount: null,
       price: 14.99,
       fullprice: 59.97,
       afterdiscount: 44.97,
+      discount: 25,
     },
     {
       month: 1,

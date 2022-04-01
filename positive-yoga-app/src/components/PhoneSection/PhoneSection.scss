@@ -14,7 +14,7 @@
     border: 1.02449px solid rgba(33, 33, 33, 0.16);
     box-shadow: 0 4px 8px 0 #ebebeb;
   }
-  & div {
+  & .mobile-section-bg {
     position: absolute;
     z-index: -1;
     width: 375px;
@@ -26,5 +26,11 @@
     margin-top: 75px;
     border: 1.02449px solid rgba(33, 33, 33, 0.16);
     border-radius: 30px;
+  }
+}
+
+@media (min-width: 576px) {
+  .mobile-section-bg {
+    display: none;
   }
 }

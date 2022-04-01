@@ -2,16 +2,12 @@
 
 .advertisment-container {
   display: flex;
-
   margin: 15px 10px;
   & div {
     margin: 0 18px;
     color: $grey;
 
     & h5 {
-      font-weight: 600;
-      font-size: 15px;
-      line-height: 20px;
       letter-spacing: -0.4px;
     }
     & p {

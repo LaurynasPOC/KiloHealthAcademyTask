@@ -15,13 +15,21 @@ import "./FrontPage.scss";
 const FrontPage = () => {
   return (
     <div>
-      <div>
-        <Header />
+      <Header />
+      <div className="head-dekstop">
+        <div className="plans-ordered">
+          Over <strong> 52 147</strong> plans ordered.
+        </div>
+        <Headline text={"Get access to your yoga program now!"} />
       </div>
       <div className="body-container">
-        <Headline text={"Get access to your yoga program now!"} />
+        <div className="head-mobile">
+          <div className="plans-ordered">
+            Over <strong> 52 147</strong> plans ordered.
+          </div>
+          <Headline text={"Get access to your yoga program now!"} />
+        </div>
         <div className="top-section">
-          <div></div>
           <div className="dekstop-month-plan">
             <MonthPlanHeadline />
             <MonthPlanSection />
@@ -32,7 +40,6 @@ const FrontPage = () => {
             <Headline textS={"What is my program?"} />
             <AdvertismentSection />
           </div>
-          <div></div>
         </div>
 
         <Headline textS={"Hear success stories from our clients"} />
@@ -40,28 +47,35 @@ const FrontPage = () => {
           <CardContainer />
         </div>
         <div className="dekstop-version">
-          <div></div>
           <CardContainerDekstop />
-          <div></div>
         </div>
         <Button text={"Get my plan"} />
-        <Headline textS={"Is Positive Yoga right for me?"} />
-        <YogaForMeSection />
-        <Headline textS={"Start your Yoga journey now!"} />
-        <PhoneSection />
-        <Headline textS={"Frequently Asked Questions"} />
+        <div className="dekstop-mid-mobile">
+          <div>
+            <Headline textS={"Is Positive Yoga right for me?"} />
+            <YogaForMeSection />
+          </div>
+          <div>
+            <Headline textS={"Start your Yoga journey now!"} />
+            <PhoneSection />
+          </div>
+        </div>
+        <div className="desktop-questions-h3">
+          <Headline textS={"Frequently Asked Questions"} />
+        </div>
+
         <QuestionsSection />
         <Button text={"Get your plan"} />
         <Headline textM={"Start your yoga program today!"} />
         <div className="top-section">
-          <div>
+          <div className="dekstop-month-plan">
             <MonthPlanHeadline />
             <MonthPlanSection />
-            <Button text="Get your plan" />
+            <Button text={"Get your plan"} />
             <PaymentSection />
           </div>
           <div>
-            <Headline textS={"What's my program?"} />
+            <Headline textS={"What is my program?"} />
             <AdvertismentSection />
           </div>
         </div>

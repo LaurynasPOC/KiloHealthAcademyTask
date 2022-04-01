@@ -10,10 +10,10 @@ const PaymentSection = () => {
         of the trial period.
       </p>
       <p>
-        By choosing a payment method you agree to the{" "}
+        By choosing a payment method you agree to the
         <span>
           T<span>&#38;</span>Cs
-        </span>{" "}
+        </span>
         and <span>Privacy Policy</span>
       </p>
       <img src={Payment} alt="payment details" />
