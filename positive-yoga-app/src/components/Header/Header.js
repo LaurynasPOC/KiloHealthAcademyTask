@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
+
 import Countdown from "react-countdown";
 import DisCountSticker from "../../assets/DiscountSticker.svg";
 import YogaLogo from "../../assets/PositiveYogaLogo.svg";
