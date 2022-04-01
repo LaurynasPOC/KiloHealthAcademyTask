@@ -1,6 +1,7 @@
 .body-container {
   margin: 15px;
-  max-width: 480px;
+
+  margin-bottom: 80px;
 }
 .dekstop-version {
   display: none;
@@ -20,10 +21,14 @@
 @media (min-width: 520px) {
   .body-container {
     margin: auto;
+    max-width: 480px;
   }
 }
 
 @media (min-width: 992px) {
+  .body-container {
+    max-width: 736px;
+  }
   .top-section {
     display: flex;
     justify-content: center;
